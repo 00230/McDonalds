@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* 공통구역 스타일 */
+
+/*
+    헤더구역 푸터구역 등 공통구역에 대한 스타일 컨텐츠 박스의 최대넓이 (row) body 태그에 기본글꼴 크기 등 설정
+*/
+.row {
+    max-width:1168px;
+    margin:0 auto;
+}
+
+#header {
+    position: relative;
+    width:100%;
+    /* top:0; */
+    /* left:0; */
+    background:#fff;
+    height: 140px;
+}
+
+#header .headarea {
+    position: relative;
+}
+
+#header>.headarea>h1 {
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    margin:30px 15px 10px 0px;
+}
+
+
+#header .navsubbtn {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+#header .navsubbtn #nav {
+    float: left;
+}
+
+#header .subnav {
+    float:right;
+    
+}
+
+#header #nav .depth1 {
+    float:left;
+}
+
+#header #nav .depth1>li {
+    float:left;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    position: relative;
+    padding:55px 95px 60px 5px; 
+}
+
+#header #nav .depth1>li>a {
+    display:inline-block;
+    position:relative;
+    transition: all 0.5s;
+}
+
+#header .depth1>li:hover>a::after {
+    content:"";
+    position:absolute;
+    top:85px;
+    left:-3px;
+    width:115%;
+    height:4px;
+    background:#ffbc0d;
+    border-radius:50px;
+    z-index:9999;
+}
+
+#header #nav .depth1 .depth2 {
+    position: absolute;
+    top:100%;
+    left:0;
+    font-size:16px;
+    color: #909090;
+    /* margin-top:10px; */
+    width:100%;
+    /* height:382px; */
+    /* border:1px solid #000; */
+    padding-left:10px;
+    text-align: left;
+    display: none;
+    z-index: 99;
+}
+
+#header #nav .depth1 .depth2 li a{
+    display:inline-block;
+    padding-top:15px;
+    position:relative;
+
+}
+
+#header #nav .depth1 .depth2 li a:first-child{
+    padding-top:25px;
+}
+
+#header #nav .depth1:hover .depth2 {
+    display:block;
+}
+
+#header #nav .depth2 li:hover {
+    color:#000;
+    font-weight:bold;
+}
+
+
+#header #nav .depth2>li:hover a::after {
+    content: "";
+    position: absolute;
+    top:50px;
+    left:0;
+    height:1px;
+    width:100%;
+    background:#000;
+}
+
+.subnav {
+    padding:55px 0;
+}
+
+.subnav a:nth-child(1){
+    width:80px;
+    background:#da0009;
+    border-radius:50px;
+    color:#fff;
+    font-size:13px;
+    padding:10px 15px;
+    font-weight:bold;    
+}
+
+.subnav a:nth-child(2){
+    width:80px;
+    background:#ffbc0d;
+    border-radius:50px;
+    color:#fff;
+    font-size:13px;
+    padding:10px 15px;
+    font-weight:bold;    
+}
+
+.subnav a:nth-child(3){
+    width:80px;
+    background:#264a36;
+    border-radius:50px;
+    color:#fff;
+    font-size:13px;
+    padding:10px 25px;
+    font-weight:bold;    
+}
+
+.subnav button {
+    border:none;
+    margin:0 0 0 26px;
+}
+
+#header > .decobox {
+    position:absolute;
+    top:100%;
+    left: 0;
+    height:382px;
+    width:100%;
+    background: #fff;
+    display:none;
+    border-top:1px solid rgba(0,0,0,0.1);
+    z-index:2;
+}
+
+#header .row:hover + .decobox {display:block;}
+
+/* -------------footer------------------ */
+
+#footer {
+    clear:both;
+    position:relative;
+    left:0;
+    background:#292929
+    
+}
+#footer .foot{
+    position: relative;
+    padding: 45px 0 55px 0;
+    background:#292929;
+}
+
+#footer .footnav {
+    font-size:14px;
+    font-weight: bold;
+    color: #fff;
+    float:left;
+    /* display:inline; */
+    position:relative;
+    width: 190px;
+    
+}
+
+#footer .footnav>ul>li {
+    margin-top:5px;
+}
+
+#footer .footnav>ul>li:first-child {
+    color:#ffff00
+}
+
+#footer .corpinfo {
+    /* display:inline-block; */
+    float:left;
+    /* padding: 45px 0 55px 0; */
+}
+
+#footer .foot .corpinfo ul li{
+    /* display:none; */
+    margin-top:5px;
+    font-size:14px;
+    color:#808080;
+}
+
+#footer .snslogo{
+    float:right;
+}
+
+#footer .snslogo ul li{
+    display:inline-block;
+    margin-left:10px;
+}
+
+#footer .snslogo li:last-child img{
+    width:100px;
+}
