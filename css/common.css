@@ -13,8 +13,6 @@
 #header {
     position: relative;
     width:100%;
-    /* top:0; */
-    /* left:0; */
     background:#fff;
     height: 140px;
 }
@@ -31,6 +29,9 @@
     margin:30px 15px 10px 0px;
 }
 
+#header .headarea .opennav {
+    display: none;
+}
 
 #header .navsubbtn {
     position:absolute;
@@ -44,7 +45,6 @@
 
 #header .subnav {
     float:right;
-    
 }
 
 #header #nav .depth1 {
@@ -98,16 +98,17 @@
     display:inline-block;
     padding-top:15px;
     position:relative;
-
 }
 
 #header #nav .depth1 .depth2 li a:first-child{
     padding-top:25px;
 }
 
-#header #nav .depth1:hover .depth2 {
+/* #header #nav .depth1:hover .depth2 {
     display:block;
-}
+} */
+
+/* #header #nav .depth1.on > li .depth2 {display:block;} */
 
 #header #nav .depth2 li:hover {
     color:#000;
@@ -212,7 +213,7 @@
     left:47%;
 }
 
-.subnav button:hover + .search{
+.subnav button + .search.on{
     display:block;
 }
 
@@ -228,7 +229,9 @@
     z-index:2;
 }
 
-#header .row:hover + .decobox {display:block;}
+/* #header .row:hover + .decobox {display:block;} */
+#header .decobox.on {display:block;}
+
 
 /* -------------footer------------------ */
 

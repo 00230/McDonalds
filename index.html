@@ -2,12 +2,18 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-        <title>McDonalds</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/rwdcommon.css">
+        <title>McDonalds</title>
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </head>
     <body>
         <div id="header">
@@ -15,6 +21,10 @@
                 <h1>
                     <a href="#"><img src="./img/logo.png" alt="맥도날드"></a>
                 </h1>
+                <div class ="opennav">
+                    <span class = "blind"> 네비게이션 열고 닫기</span>
+                    <i class = "fas fa-bars"></i>
+                </div>
                 <div class="navsubbtn">
                     <nav id="nav">
                         <ul class="depth1">
@@ -75,15 +85,18 @@
 
 
         <div id="main">
-                <div class="slideouter cf">
-                    <button class="slide_left slide_btn">이전</button>
+                <div class="article1 cf">
+                    <!-- <button class="slide_left slide_btn">이전</button>
                     <button class="slide_right slide_btn">다음</button>
-                    <button class="slide_pause slide_btn"></button>
-                    <div class="slideinner">
-                        <div class="slide1"></div>
-                        <div class="slide2"></div>
-                        <div class="slide3"></div>
+                    <button class="slide_pause slide_btn"></button> -->
+                    <div class="slide-group">
+                        <div class="slide slide1"></div>
+                        <div class="slide slide2"></div>
+                        <div class="slide slide3"></div>
                     </div>
+                    <div class="plpa"><img src="./img/btn_pause.png" alt="pause" data-src="./img/btn_play.png"></div>
+
+                    
                 </div>
             <div class="section row">
                 <h2>McDonald's LIVE</h2>
@@ -142,6 +155,61 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="Mclive2 cf row">
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/bacon_tomato_egg_muf.png" alt="">
+                            <strong>
+                                갓 구워내 따뜻하고 신선한 
+                                베이컨 토마토 에그 머핀!
+                            </strong>
+                        </a>
+                    </li>
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/bigmc_special.png" alt="">
+                            <strong>
+                                빅맥 스페셜 세트&amp;
+                                상하이 버거 스페셜 세트 출시!
+                            </strong>
+                        </a>
+                    </li>
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/detail_make_different.png" alt="">
+                            <strong>
+                                디테일의 차이가 버거의 차이
+                            </strong>
+                        </a>
+                    </li>
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/lucky_burger.png" alt="">
+                            <strong>
+                                더 특별해진 행운버거
+                                행운버거 골드 스페셜을 만나보세요
+                            </strong>
+                        </a>
+                    </li>
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/mc_morning.png" alt="">
+                            <strong>
+                                2900원 부터 즐기는
+                                맥모닝 콤보를 만나보세요
+                            </strong>
+                        </a>
+                    </li>
+                    <li class = "Mcliveson">
+                        <a href="#">
+                            <img src="./img/mc_app_coming.png" alt="">
+                            <strong>
+                                취향저걱 쿠폰부터 쏠쏠한 정보까지! 
+                                지금 맥도날드 앱 가입하고 쿠폰받자
+                            </strong>
+                        </a>
+                     </li>
+                </ul>
                 <div class="more"><a href="#"><img src="./img/btn_more.png" alt="더보기"></a></div>
             </div>
             <div class="sidemenu">
@@ -187,6 +255,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="./js/common.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
